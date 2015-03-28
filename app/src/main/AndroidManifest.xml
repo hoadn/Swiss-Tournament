@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.swiss.tournament">
+
+    <uses-permission android:name="android.permission" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.swiss.tournament.activities.Main"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.swiss.tournament.activities.NewTournament"
+            android:label="@string/title_activity_new_tournament"
+            android:parentActivityName="com.swiss.tournament.activities.Main"></activity>
+
+        <activity
+            android:name="com.swiss.tournament.activities.Archive"
+            android:label="@string/title_activity_archive"
+            android:parentActivityName="com.swiss.tournament.activities.Main"></activity>
+        <activity
+            android:name="com.swiss.tournament.activities.Rounds"
+            android:label="@string/title_activity_rounds__flipper"></activity>
+    </application>
+
+</manifest>

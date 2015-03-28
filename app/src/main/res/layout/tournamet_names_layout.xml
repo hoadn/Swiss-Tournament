@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tournament_names_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/tournament_name"
+        android:layout_width="0sp"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:background="#ff99cfff"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="selectTournament"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageButton
+        android:id="@+id/tournament_remove"
+        android:layout_width="75dp"
+        android:layout_height="fill_parent"
+        android:background="#a7ff1d2a"
+        android:clickable="true"
+        android:onClick="removeTournament"
+        android:src="@android:drawable/ic_menu_delete" />
+
+</LinearLayout>

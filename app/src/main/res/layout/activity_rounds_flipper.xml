@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+>
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="425dp"
+        android:layout_margin="6dip">
+
+        <!--  The child Views/Layout to flip -->
+
+        <!--  Layout 1 for 1st Screen -->
+
+        <!--  Layout 2 for 2nd Screen -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/round1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+
+                android:textColor="#191975"
+                android:textSize="25sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="                  White                                                 Black"
+                android:id="@+id/textView" />
+
+            <ListView
+                android:id="@+id/roundlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:clickable="false"
+                android:textColor="#191975"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:listitem="@layout/roundstable"
+                android:dividerHeight="25dp"
+                android:divider="#223dff00"
+                android:drawSelectorOnTop="false" />
+
+
+        </LinearLayout>
+
+
+    </ViewFlipper>
+
+    <FrameLayout
+        android:layout_width="281dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center">
+
+
+        <Button
+            android:id="@+id/standings"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#ff343434"
+            android:text="Standings"
+            android:textColor="#ffffffff" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

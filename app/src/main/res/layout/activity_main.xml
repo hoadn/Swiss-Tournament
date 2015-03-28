@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffacf1ff"
+    tools:context=".Main">
+
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="160dp"
+        android:width="200dp"
+        android:background="#ff343434"
+        android:clickable="true"
+        android:focusable="false"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:singleLine="false"
+        android:text="@string/new_tournament"
+        android:textColor="#ffffffff" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="90dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="30dp"
+        android:paddingTop="90dp"
+        android:src="@drawable/chess_piece_white_knight_t_fotor" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button5"
+        android:layout_alignLeft="@+id/button5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/button5"
+        android:layout_alignStart="@+id/button5"
+        android:layout_marginBottom="78dp"
+        android:background="#ff343434"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/Archive"
+        android:textColor="#ffffffff" />
+
+</RelativeLayout>
